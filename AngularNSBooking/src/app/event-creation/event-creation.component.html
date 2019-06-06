@@ -1,0 +1,25 @@
+<StackLayout class="form">
+    <GridLayout columns="100, 100, *">
+        <Label col="0" text="Start:" class="input-label"></Label>
+        <Label col="1" [text]="event.startDate | date: 'dd/MM/yyyy'" class="date-label"></Label>
+        <Button col="2" text="Enter Date" (tap)="showStartDateModal()" class="date-button"></Button>
+    </GridLayout>
+    <GridLayout columns="100, 100, *">
+        <Label col="0" text="End:" class="input-label"></Label>
+        <Label col="1" [text]="event.endDate | date: 'dd/MM/yyyy'" class="date-label"></Label>
+        <Button col="2" text="Enter Date" (tap)="showEndDateModal()" class="date-button"></Button>
+    </GridLayout>
+    <GridLayout columns="100, *">
+        <Label col="0" text="Title: " class="input-label"></Label>
+        <TextField col="1" class="input-field" required [(ngModel)]="event.title" #title="ngModel"></TextField>
+    </GridLayout>
+    <GridLayout columns="100, *">
+        <Label col="0" text="Category: " class="input-label"></Label>
+        <TextField col="1" class="input-field" required [(ngModel)]="event.category" #category="ngModel"></TextField>
+    </GridLayout>
+    <GridLayout columns="100, *">
+        <Label col="0" text="Location: " class="input-label"></Label>
+        <TextField col="1" class="input-field" required [(ngModel)]="event.location" #location="ngModel"></TextField>
+    </GridLayout>
+    <Button *ngIf="title.valid && category.valid && location.valid" class="create-button" text="Create" (tap)="createEvent()" ></Button>    
+</StackLayout>

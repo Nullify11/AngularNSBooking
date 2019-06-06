@@ -1,0 +1,4 @@
+<StackLayout>
+    <DatePicker (loaded)="onPickerLoaded($event)" [(ngModel)]="date"></DatePicker>
+    <Button text="Submit" (tap)="close(date)"></Button>
+</StackLayout>

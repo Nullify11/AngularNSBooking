@@ -1,0 +1,6 @@
+
+<StackLayout>
+    <div *ngFor="let event of events; let i = index">
+        <ns-event-snippet [event]="events[i]" [id]="i"></ns-event-snippet>
+    </div>
+</StackLayout>

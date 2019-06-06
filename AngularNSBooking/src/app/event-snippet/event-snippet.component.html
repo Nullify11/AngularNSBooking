@@ -1,0 +1,5 @@
+<StackLayout [nsRouterLink]="['/detail', id]">
+    <Label class="title" [text]="event.title"></Label>
+    <Label [text]="event.startDate | date:'fullDate'"></Label>
+    <Label class="category" [text]="event.category"></Label>
+</StackLayout>

@@ -1,0 +1,31 @@
+/* Add mobile styles for the component here.  */
+.form{
+    margin-left: 65px;
+    margin-top: 20px;
+}
+
+.input-label{
+    margin-right: 20px;
+    margin-top: 45px;
+    font-size: 20;
+}
+
+.input-field{
+    border-width: 4px;
+    border-color: #ccc;
+    border-radius: 5;
+    width: 600px;
+}
+
+.create-button{
+    margin-left: 580px;
+    width: 300px;
+}
+
+.date-button{
+    width: 300px;
+}
+
+.date-label{
+    margin-top: 45px;
+}

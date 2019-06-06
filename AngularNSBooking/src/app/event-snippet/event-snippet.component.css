@@ -1,0 +1,26 @@
+/* Add mobile styles for the component here.  */
+StackLayout{
+    border-color: #ccc;
+    border-bottom-width: 6px;
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    margin-right: 35px;
+    margin-left: 35px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+Label{
+    margin-left: 25px;
+}
+
+.category{
+    padding-bottom: 20px;
+}
+
+.title{
+    font-size: 18;
+    font-weight: bold;
+}

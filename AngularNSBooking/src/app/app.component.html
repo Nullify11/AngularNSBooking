@@ -1,0 +1,13 @@
+<!-- https://docs.nativescript.org/angular/core-concepts/angular-navigation.html#page-router-outlet -->
+<GridLayout rows="40, *, 60">
+    <StackLayout class="header" row="0">
+    </StackLayout>
+    <ScrollView row="1">
+        <StackLayout>
+            <router-outlet></router-outlet>
+        </StackLayout>
+    </ScrollView>
+    <StackLayout row="2">
+        <ns-navigation-bar></ns-navigation-bar>
+    </StackLayout>
+</GridLayout>
